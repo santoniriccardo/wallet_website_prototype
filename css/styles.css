@@ -3,6 +3,9 @@ html {
 }
 
 /* *************************     HEADER      ******************************* */
+.navbar {
+  background-color: #FFFFFF;
+}
 
 .search-button {
   font-size: 1.5em;
@@ -57,6 +60,17 @@ input[type=text]:focus {
 #grid-block a {
   position: relative;
   transform: translate(0, -500%);
+}
+
+/* *************************   SIGN IN PAGE   ******************************* */
+.signin {
+  align: center;
+  display: inline-block;
+  width: 33%;
+}
+
+.signin .input-box {
+  padding: 5px;
 }
 
 /* *************************      FOOTER      ******************************* */

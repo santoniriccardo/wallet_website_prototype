@@ -6,7 +6,7 @@
     <meta name="description" content="67-250 Term Project Website">
     <meta name="author" content="Isabelle Augensen, Riccardo Santoni, Sara Wong">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Big Skinny: World's Thinnest Wallets</title>
+    <title>Big Skinny: Sign In</title>
 
     <!-- Bootstrap core -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
@@ -69,9 +69,9 @@
               Our Story
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="about-us.html">About Us</a>
-              <a class="dropdown-item" href="faq.html">FAQ</a>
-              <a class="dropdown-item" href="reviews">Reviews</a>
+              <a class="dropdown-item" href="#">About Us</a>
+              <a class="dropdown-item" href="#">FAQ</a>
+              <a class="dropdown-item" href="#">Reviews</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -89,51 +89,31 @@
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-link" type="submit"><div class="search-button"><i class="fas fa-search"></i></div></button>
         </form>
-        <a class="py-2" href="account.html"><div class="header-button"><i class="fas fa-user-circle"></i></div><a/>
+        <a class="py-2 active" href="account.html"><div class="header-button"><i class="fas fa-user-circle"></i></div><a/>
         <a class="py-2" href="cart.html"><div class="header-button"><i class="fas fa-shopping-cart"></div></i><a/>
       </div>
     </nav>
 
-<div class="position-relative overflow-hidden text-center bg-light">
-    <div id="home-image"><img src="images/dummy-image.jpg">
-      <h1 id="home-text">Top 5 Wallet Problems: Solved</h1>
+<!-- Modified from Bootstrap 4.3 Examples -->
+<div class="text-center">
+  <form class="signin">
+    <h1 class="h3 mb-3 font-weight-normal">Please Sign In</h1>
+    <div class="input-box">
+      <label for="inputEmail" class="sr-only">Email Address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>
     </div>
-</div>
-
-<div class="d-md-flex flex-md-equal">
-  <div class="bg-light px-md-3 text-center overflow-hidden">
-    <div class="my-3 py-3">
-      <div id="grid-block"><img src="images/dummy-image.jpg">
-        <a class="btn btn-outline-secondary grid-text" href="#">Shop New</a>
-      </div>
-  </div>
-  </div>
-
-  <div class="bg-light px-md-3 text-center overflow-hidden">
-    <div class="my-3 py-3">
-      <div id="grid-block"><img src="images/dummy-image.jpg">
-        <a class="btn btn-outline-secondary grid-text" href="#">Shop Sale</a>
-      </div>
+    <div class="input-box">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
     </div>
-  </div>
-</div>
-
-<div class="d-md-flex flex-md-equal">
-  <div class="bg-light px-md-3 text-center overflow-hidden">
-    <div class="my-1 py-1">
-      <div id="grid-block"><img src="images/dummy-image.jpg">
-        <a class="btn btn-outline-secondary grid-text" href="#">Shop New</a>
-      </div>
-  </div>
-  </div>
-
-  <div class="bg-light px-md-3 text-center overflow-hidden">
-    <div class="my-1 py-1">
-      <div id="grid-block"><img src="images/dummy-image.jpg">
-        <a class="btn btn-outline-secondary grid-text" href="#">Shop Sale</a>
-      </div>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember Me
+      </label>
     </div>
-  </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
+  </form>
 </div>
 
 <footer class="container py-5">
