@@ -37,14 +37,26 @@ input[type=text]:focus {
 
 /* *************************    HOME BODY     ******************************* */
 #home-image img {
+  width: 100%;
   opacity: 0.75;
 }
 
 #home-text {
   position: absolute;
+  display:inline-block;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#grid-block img {
+  width: 100%;
+  opacity: 0.75;
+}
+
+#grid-block a {
+  position: relative;
+  transform: translate(0, -500%);
 }
 
 /* *************************      FOOTER      ******************************* */
