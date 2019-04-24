@@ -2,6 +2,24 @@ html {
   overflow-y: scroll;
 }
 
+a {
+  color: #757575;
+}
+
+a:hover {
+  color: #212529;
+}
+
+.btn-primary {
+  background-color: #757575;
+  outline-color: #757575;
+}
+
+.btn-primary:hover {
+  background-color: #212529;
+  outline-color: #212529;
+}
+
 /* *****************************    HEADER    ******************************* */
 .navbar {
   background-color: #FFFFFF;
@@ -36,23 +54,16 @@ body {
 }
 
 /* *************************      FOOTER      ******************************* */
+.contact-info {
+  text-align: center;
+}
 
 .contact-info a {
   font-size: 1em;
-  color: #757575;
   padding: .25em;
 }
 
 .social-icons a {
   font-size: 1.75em;
-  color: #757575;
   padding: .25em;
-}
-
-.contact-info a:hover {
-  color: #212529;
-}
-
-.contact-info {
-  text-align: center;
 }
