@@ -2,7 +2,7 @@ html {
   overflow-y: scroll;
 }
 
-/* *************************     HEADER      ******************************* */
+/* *****************************    HEADER    ******************************* */
 .navbar {
   background-color: #FFFFFF;
 }
@@ -35,51 +35,6 @@ body {
   right: 10px;
 }
 
-/* *************************    HOME BODY     ******************************* */
-#home-image img {
-  width: 100%;
-  opacity: 0.75;
-}
-
-#home-text {
-  position: absolute;
-  display:inline-block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#grid-block img {
-  width: 100%;
-  opacity: 0.9;
-}
-
-#grid-block a {
-  position: relative;
-  transform: translate(0, -400%);
-}
-
-#grid-block .btn, .btn-outline-secondary, .grid-text {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
-}
-
-/* *************************   SIGN IN PAGE   ******************************* */
-.signin {
-  align: center;
-  display: inline-block;
-  width: 33%;
-}
-
-.signin .input-box {
-  padding: 5px;
-}
-
-.btn-primary {
-  background-color: #6c757d;
-  border-color: #6c757d;
-}
-
 /* *************************      FOOTER      ******************************* */
 
 .contact-info a {
@@ -93,7 +48,6 @@ body {
   color: #757575;
   padding: .25em;
 }
-
 
 .contact-info a:hover {
   color: #212529;
