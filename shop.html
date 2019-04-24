@@ -8,7 +8,6 @@
     <meta name="generator" content="Jekyll v3.8.5">
     <title>Big Skinny: Shop All</title>
 
-    <!-- Bootstrap core -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="css/product.css" rel="stylesheet">
@@ -17,22 +16,20 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+    .badge-notify{
+      background:red;
+      position:relative;
+      top: -20px;
+      right: 10px;
+    }
+    .my-cart-icon-affix {
+      position: fixed;
+      z-index: 999;
+    }
     </style>
+
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg navbar-light sticky-top py-1">
       <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" height="80" alt=""></a>
@@ -87,55 +84,150 @@
           <button class="btn btn-link" type="submit"><div class="search-button"><i class="fas fa-search"></i></div></button>
         </form>
         <a class="py-2" href="account.html"><div class="header-button"><i class="fas fa-user-circle"></i></div><a/>
-        <a class="py-2" href="cart.html"><div class="header-button"><i class="fas fa-shopping-cart"></div></i><a/>
+        <span class="py-2 header-button my-cart-icon"><i class="fas fa-shopping-cart"></i><span class="badge badge-notify my-cart-badge"></span></span>
       </div>
     </nav>
 
-<!-- Page Body -->
+    <div class="row">
+      <div class="col-md-3 text-center">
+        <img src="images/img_1.png" width="150px" height="150px">
+        <br>
+        product 1 - <strong>$10</strong>
+        <br>
+        <button class="btn btn-danger my-cart-btn" data-id="1" data-name="product 1" data-summary="summary 1" data-price="10" data-quantity="1" data-image="images/img_1.png">Add to Cart</button>
+        <a href="#" class="btn btn-info">Details</a>
+      </div>
 
-<footer class="container py-5">
-  <div class="row">
-    <div class="col-2 col-md">
-      <h5>Shop</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Men's Wallets</a></li>
-        <li><a class="text-muted" href="#">Women's Wallets</a></li>
-        <li><a class="text-muted" href="#">Card Holders</a></li>
-        <li><a class="text-muted" href="#">Money Clips</a></li>
-        <li><a class="text-muted" href="shop.html">Shop All</a></li>
-      </ul>
-    </div>
-    <div class="col-2 col-md">
-      <h5>Discover</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="about-us.html">About Us</a></li>
-        <li><a class="text-muted" href="#">FAQ</a></li>
-        <li><a class="text-muted" href="#">Customer Reviews</a></li>
-        <li><a class="text-muted" href="#">Help and Support</a></li>
-      </ul>
-    </div>
-    <div class="col-2 col-md">
-      <h5>Connect</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Locations</a></li>
-        <li><a class="text-muted" href="media.html">Media</a></li>
-        <li><a class="text-muted" href="#">Blog</a></li>
-        <li><a class="text-muted" href="#">Wholesale</a></li>
-      </ul>
-    </div>
-    <div class="col-6 col-lg">
-      <div class="contact-info">
-        <img src="images/logo.jpg" height="50" alt=""> &copy; 2019
-        <div class="social-icons">
-          <a href="https://www.facebook.com/bigskinny" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="https://www.twitter.com/big_skinny" target="_blank"><i class="fab fa-twitter-square"></i></i></a>
-          <a href="https://www.instagram.com/bigskinny_wallets" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.youtube.com/BigSkinnyWallet1" target="_blank"><i class="fab fa-youtube-square"></i></a>
-        </div>
-        <a href="mailto:service@bigskinny.com">service@bigskinny.com</a><br/>
-        <p>(617)-500-6939</p>
+      <div class="col-md-3 text-center">
+        <img src="images/img_2.png" width="150px" height="150px">
+        <br>
+        product 2 - <strong>$20</strong>
+        <br>
+        <button class="btn btn-danger my-cart-btn" data-id="2" data-name="product 2" data-summary="summary 2" data-price="20" data-quantity="1" data-image="images/img_2.png">Add to Cart</button>
+        <a href="#" class="btn btn-info">Details</a>
+      </div>
+
+      <div class="col-md-3 text-center">
+        <img src="images/img_3.png" width="150px" height="150px">
+        <br>
+        product 3 - <strong>$30</strong>
+        <br>
+        <button class="btn btn-danger my-cart-btn" data-id="3" data-name="product 3" data-summary="summary 3" data-price="30" data-quantity="1" data-image="images/img_3.png">Add to Cart</button>
+        <a href="#" class="btn btn-info">Details</a>
+      </div>
+
+      <div class="col-md-3 text-center">
+        <img src="images/img_4.png" width="150px" height="150px">
+        <br>
+        product 4 - <strong>$40</strong>
+        <br>
+        <button class="btn btn-danger my-cart-btn" data-id="4" data-name="product 4" data-summary="summary 4" data-price="40" data-quantity="1" data-image="images/img_4.png">Add to Cart</button>
+        <a href="#" class="btn btn-info">Details</a>
       </div>
     </div>
-  </div>
-</footer>
+
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-2 col-md">
+          <h5>Shop</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Men's Wallets</a></li>
+            <li><a class="text-muted" href="#">Women's Wallets</a></li>
+            <li><a class="text-muted" href="#">Card Holders</a></li>
+            <li><a class="text-muted" href="#">Money Clips</a></li>
+            <li><a class="text-muted" href="shop.html">Shop All</a></li>
+          </ul>
+        </div>
+        <div class="col-2 col-md">
+          <h5>Discover</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="about-us.html">About Us</a></li>
+            <li><a class="text-muted" href="#">FAQ</a></li>
+            <li><a class="text-muted" href="#">Customer Reviews</a></li>
+            <li><a class="text-muted" href="#">Help and Support</a></li>
+          </ul>
+        </div>
+        <div class="col-2 col-md">
+          <h5>Connect</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="#">Locations</a></li>
+            <li><a class="text-muted" href="media.html">Media</a></li>
+            <li><a class="text-muted" href="#">Blog</a></li>
+            <li><a class="text-muted" href="#">Wholesale</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg">
+          <div class="contact-info">
+            <img src="images/logo.jpg" height="50" alt=""> &copy; 2019
+            <div class="social-icons">
+              <a href="https://www.facebook.com/bigskinny" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.twitter.com/big_skinny" target="_blank"><i class="fab fa-twitter-square"></i></i></a>
+              <a href="https://www.instagram.com/bigskinny_wallets" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/BigSkinnyWallet1" target="_blank"><i class="fab fa-youtube-square"></i></a>
+            </div>
+            <a href="mailto:service@bigskinny.com">service@bigskinny.com</a><br/>
+            <p>(617)-500-6939</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/jquery.mycart.js"></script>
+    <script type="text/javascript">
+    $(function () {
+
+      var goToCartIcon = function($addTocartBtn){
+        var $cartIcon = $(".my-cart-icon");
+        var $image = $('<img width="30px" height="30px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+        $addTocartBtn.prepend($image);
+        var position = $cartIcon.position();
+        $image.animate({
+          top: position.top,
+          left: position.left
+        }, 500 , "linear", function() {
+          $image.remove();
+        });
+      }
+
+      $('.my-cart-btn').myCart({
+        currencySymbol: '$',
+        classCartIcon: 'my-cart-icon',
+        classCartBadge: 'my-cart-badge',
+        classProductQuantity: 'my-product-quantity',
+        classProductRemove: 'my-product-remove',
+        classCheckoutCart: 'my-cart-checkout',
+        affixCartIcon: true,
+        showCheckoutModal: true,
+        numberOfDecimals: 2,
+        cartItems: null,
+        clickOnAddToCart: function($addTocart){
+          goToCartIcon($addTocart);
+        },
+        afterAddOnCart: function(products, totalPrice, totalQuantity) {
+          console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+        },
+        clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+          console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+        },
+        checkoutCart: function(products, totalPrice, totalQuantity) {
+          var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+          checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+          $.each(products, function(){
+            checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+          });
+          alert(checkoutString)
+          console.log("checking out", products, totalPrice, totalQuantity);
+        },
+        getDiscountPrice: function(products, totalPrice, totalQuantity) {
+          console.log("calculating discount", products, totalPrice, totalQuantity);
+          return totalPrice * 0.5;
+        }
+      });
+
+    });
+    </script>
+
+</body>
 </html>

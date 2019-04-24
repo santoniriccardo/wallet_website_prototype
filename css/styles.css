@@ -38,6 +38,13 @@ input[type=text]:focus {
   width: 100%;
 }
 
+.badge-notify{
+  background:red;
+  position:relative;
+  top: -20px;
+  right: 10px;
+}
+
 /* *************************    HOME BODY     ******************************* */
 #home-image img {
   width: 100%;
