@@ -28,16 +28,6 @@ body {
   color: #0000000;
 }
 
-input[type=text] {
-  width: 130px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
-
-input[type=text]:focus {
-  width: 100%;
-}
-
 .badge-notify{
   background:red;
   position:relative;
@@ -61,12 +51,17 @@ input[type=text]:focus {
 
 #grid-block img {
   width: 100%;
-  opacity: 0.75;
+  opacity: 0.9;
 }
 
 #grid-block a {
   position: relative;
-  transform: translate(0, -500%);
+  transform: translate(0, -400%);
+}
+
+#grid-block .btn, .btn-outline-secondary, .grid-text {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 /* *************************   SIGN IN PAGE   ******************************* */
@@ -78,6 +73,11 @@ input[type=text]:focus {
 
 .signin .input-box {
   padding: 5px;
+}
+
+.btn-primary {
+  background-color: #6c757d;
+  border-color: #6c757d;
 }
 
 /* *************************      FOOTER      ******************************* */
