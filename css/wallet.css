@@ -93,8 +93,7 @@ img {
           flex-grow: 1;
 }
 
-.product-title, .price, .sizes, .colors {
-  text-transform: UPPERCASE;
+.product-title, .price, .colors {
   font-weight: bold;
 }
 
@@ -125,30 +124,24 @@ img {
 .color {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
-  height: 2em;
-  width: 2em;
+  margin-right: 15px;
+  height: 1.75em;
+  width: 1.75em;
   border-radius: 2px;
-}
-
-.color:first-of-type {
-    margin-left: 20px;
 }
 
 .product-buttons {
   background: #757575;
   padding: 1.2em;
   border: none;
-  text-transform: UPPERCASE;
   font-weight: bold;
-  color: #fff;
+  color: #FFFFFF;
   -webkit-transition: background .3s ease;
           transition: background .3s ease;
 }
 
 .product-buttons:hover {
     background: #212529;
-    color: #fff;
 }
 
 .black {
