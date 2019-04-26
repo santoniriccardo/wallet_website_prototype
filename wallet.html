@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,12 +7,13 @@
     <meta name="description" content="67-250 Term Project Website">
     <meta name="author" content="Isabelle Augensen, Riccardo Santoni, Sara Wong">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Big Skinny: Sign In</title>
+    <title>Big Skinny: Leather Acrobat Wallet</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="css/product.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/signin.css" rel="stylesheet">
+    <link href="css/wallet.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
   </head>
@@ -74,29 +76,76 @@
       </div>
     </nav>
 
-    <!-- Modified from Bootstrap 4.3 Examples -->
-    <div class="text-center">
-      <form class="signin">
-        <h1 class="h3 mb-3 font-weight-normal">Please Sign In</h1>
-        <div class="input-box">
-          <label for="inputEmail" class="sr-only">Email Address</label>
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email Address" required autofocus>
+    <!-- Modified from https://bootsnipp.com/snippets/56bAW -->
+    <div class="container">
+      <div class="container-fliud">
+        <div class="wrapper row">
+          <div class="preview col-md-6">
+            <div class="preview-pic tab-content">
+              <div class="tab-pane active" id="pic-1"><img src="images/wallet/product1-1.png" /></div>
+              <div class="tab-pane" id="pic-2"><img src="images/wallet/product1-2.png"/></div>
+              <div class="tab-pane" id="pic-3"><img src="images/wallet/product1-3.png"/></div>
+              <div class="tab-pane" id="pic-4"><img src="images/wallet/product1-4.png"/></div>
+              <div class="tab-pane" id="pic-5"><iframe width="560" height="315" src="https://www.youtube.com/embed/KyyL13JTdhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+            <ul class="preview-thumbnail nav nav-tabs">
+              <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="images/wallet/product1-1.png" /></a></li>
+              <li><a data-target="#pic-2" data-toggle="tab"><img src="images/wallet/product1-2.png"/></a></li>
+              <li><a data-target="#pic-3" data-toggle="tab"><img src="images/wallet/product1-3.png"/></a></li>
+              <li><a data-target="#pic-4" data-toggle="tab"><img src="images/wallet/product1-4.png"/></a></li>
+              <li><a data-target="#pic-5" data-toggle="tab"><img src="images/wallet/video.png"/></a></li>
+            </ul>
+          </div>
+          <div class="details col-md-6 my-4">
+            <h3 class="product-title">Leather Acrobat Wallet</h3>
+            <div class="row my-3">
+              <div class="col-md-4"><h4 class="price"><span>$28.95</span></h4></div>
+              <div class="col-md-3">
+                <div class="rating">
+                  <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star blank"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <span class="review-no">41 reviews</span>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="mx-3"><button class="add-to-cart btn product-buttons" type="button"><i class="fa fa-shopping-cart"></i>  Add to Cart</button></div>
+              <div class="mx-3"><button class="like btn product-buttons" type="button"><i class="fas fa-heart"></i>  Add to Wishlist</button></div>
+            </div>
+            <p class="product-description my-3">Suspend your cash. Yup, we got rid of the billfold area in our efforts to maintain thinness. Card slots for plastic and you have one of the smallest imprint sized wallets in the world---you can fit this thin compact wallet in any small pocket you desire. 1/4" thin on the spring end and 1/8" on the thinner outside side when empty.</p>
+            <div class="row my-3">
+              <div class="col-md-2"><h5 class="colors">Colors:</h5></div>
+              <div class="col-md-4"><span class="color black"></span><span class="color brown"></span></div>
+            </div>
+            <ul>
+              <li>10-15 cards</li>
+              <li>1 clear ID pocket</li>
+              <li>2 hidden storage pockets</li>
+              <li>Adjustable money clip that can hold up to 30 pcs. of paper bills</li>
+              <li>Dimensions: 4 1/4" wide x 3 1/8" tall, 4 mm thin</li>
+              <li>Materials: super-thin top-grain leather (exterior), ultra-thin nylon microfiber (interior)</li>
+            </ul>
+          </div>
         </div>
-        <div class="input-box">
-          <label for="inputPassword" class="sr-only">Password</label>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        </div>
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember Me
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In</button>
-        <div class="mt-3"><a href="">Don't have an account? Sign up!</a></div>
-        <p class="mt-5 mb-3 text-muted">&copy; 2019</p>
-      </form>
+      </div>
     </div>
-
+    <div class="container">
+      <p>
+        <a class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><h5>Reviews</h5></a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </div>
+    </div>
     <footer class="px-5 py-5">
       <div class="row">
         <div class="col-md-2">
