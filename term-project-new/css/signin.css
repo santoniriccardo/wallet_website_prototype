@@ -1,0 +1,15 @@
+/* *************************   SIGN IN PAGE   ******************************* */
+.signin {
+  align: center;
+  display: inline-block;
+  width: 33%;
+}
+
+.signin .input-box {
+  padding: 5px;
+}
+
+.btn-primary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}

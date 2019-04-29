@@ -1,0 +1,32 @@
+/* *************************     HOME PAGE    ******************************* */
+#text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.8;
+  background-color: #959CA8;
+  border-radius: .5rem;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 1.5em;
+  transform: translate(-50%, -50%);
+}
+
+#text-block .btn:hover {
+  border-color: #FFFFFF;
+}
+
+#grid-block img {
+  height: 300px;
+  opacity: 0.9;
+}
+
+#grid-block a {
+  position: relative;
+  transform: translate(0, -400%);
+}
+
+#grid-block .btn, .btn-outline-secondary, .grid-text {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
